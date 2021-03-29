@@ -4,6 +4,7 @@
   "description": "Test de web socket pour mon projet de fin d'année",
   "main": "index.js",
   "dependencies": {
+    "express": "^4.17.1",
     "socket.io": "^4.0.0",
     "ws": "^7.4.4"
   },
