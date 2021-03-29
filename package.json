@@ -1,0 +1,25 @@
+{
+  "name": "websocket",
+  "version": "1.0.0",
+  "description": "Test de web socket pour mon projet de fin d'année",
+  "main": "index.js",
+  "dependencies": {
+    "socket.io": "^4.0.0",
+    "ws": "^7.4.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Derpinou/websocket.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Derpinou/websocket/issues"
+  },
+  "homepage": "https://github.com/Derpinou/websocket#readme"
+}
