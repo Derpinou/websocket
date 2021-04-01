@@ -1,3 +1,6 @@
+/*
+Importation des librairies
+ */
 const fetch = require('snekfetch');
 (async () => {
     let data = {
@@ -18,5 +21,8 @@ const fetch = require('snekfetch');
             fill: false,
         }]
     }
+    /*
+    Requete vers l'api (pour rafraichir le graphique avec le websocket)
+     */
     await fetch.post('http://localhost:3000/request').send(data).then(r => r.body.toString()).then(console.log)
 })()
