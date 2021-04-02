@@ -24,5 +24,5 @@ const fetch = require('snekfetch');
     /*
     Requete vers l'api (pour rafraichir le graphique avec le websocket)
      */
-    await fetch.post('http://localhost:3000/request').send(data).then(r => r.body.toString()).then(console.log)
+    await fetch.post('http://localhost:3000/graphRequest').send(data).then(r => r.body.toString()).then(console.log)
 })()
