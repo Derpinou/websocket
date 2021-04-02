@@ -5,6 +5,16 @@
     <title>Datas</title>
 </head>
 <body>
-
+<div class="wh" id="wh">
+    <p id="p1"> Données</p>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io();
+    socket.on("data", async (config) => {
+        let docDiv = document.querySelector("div")
+        docDiv.querySelector("p").textContent = config.energy
+    })
+</script>
 </body>
 </html>
