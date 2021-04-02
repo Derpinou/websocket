@@ -20,8 +20,16 @@ app.post("/graphRequest", async (req, res) => {
     res.sendStatus(200);
     console.log('Got body:', req.body);
     io.emit('graph data', req.body)
-    console.log("emited")
+    console.log("emited graph")
 })
+
+app.post("/dataRequest", async (req, res) => {
+    res.sendStatus(200);
+    console.log('Got body:', req.body);
+    io.emit('data', req.body)
+    console.log("emited data")
+})
+
 
 app.get('/data', async (req, res) => {
     res.sendFile(__dirname + '/public/html/data.html');
